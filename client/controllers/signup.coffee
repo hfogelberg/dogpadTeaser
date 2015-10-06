@@ -6,6 +6,6 @@ Template.signup.events
 		comment = template.find('.comment').value
 		Meteor.call 'saveSignup', email, beta, comment, (error) ->
 			if (error)
-				alert('error')
+				alert('Ooops! Something went wrong when saving to the database. We've logged the error and will take a look at it. Why don't you try again?)
 			else
 				Router.go('/thanks')
