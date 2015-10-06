@@ -1,0 +1,43 @@
+<template name='signup'>
+	<article>
+		<h1 class='moreTitle'>DOGPAD</h1>
+		<p>
+			So, you are a dog owner? Great, so are we! Few things are as rewarding as having a dog. 
+		</p>
+		<p>
+			However, having a dog also means a bit of work and quite a few things that you ave to, should or want to keep in order. So, our idea is quite simply to build a web site that will help you, as a dog owner, wherever you are.
+		</p>
+		<p>
+			We won't just help you with the boring paperwork though. Having a dog is and should be fun. So, why not try to make it a bit more rewarding and more fun?
+		</p>
+		<p>
+			We are working on dogpad right now, so you can't try it out quite yet. But if you want to know when you can, just sign up and well send you a note when the site is live.
+		</p>
+		<p>
+			Don't worry! We'll keep you mail address safe and won't abuse it in anyway.
+		</p>
+		<p>
+			Oh, by the way. If you want to help us you could sign up as a beta tester while you're at it. Just check the box and we'll send you and invite when it's time for testing.
+		</p>
+
+		<form id='signupForm' class='form'>
+			<div class='form-group '>
+				<label for='email'>Email</label>
+				<input type='email' class='form-control email' name='email' placeholder='email'>
+			</div>
+
+
+			<div class='form-group'>
+				<label for='beta'>Yes! I'll help beta test</label>
+				<input class='beta' name='beta' type='checkbox'/>
+			</div>
+
+			<div class='form-group '>
+				<label for='comment'>Comment</label>
+				<textarea class='form-control comment' rows='5' name='comment'></textarea>
+			</div>
+
+			<input type='button' class='btn btn-primary signupBtn' value='Submit' >
+		</form>
+	</article>
+</template>

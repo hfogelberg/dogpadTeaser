@@ -1,0 +1,86 @@
+<template name='home'>
+	<div class='boardContainer'>
+		<img src='teaser.png' class='animated hinge img-responsive' id='noticeBoard' alt='dogpad-noticeboard'/>
+	</div>
+
+ <div class="parallax">
+  <div id="group1" class="parallax__group">
+    <div class="parallax__layer parallax__layer--base">
+      <div class="title">
+        <p>So you have a dog or two.</p> 
+        <p>Or three or four?</p></div>
+    </div>
+  </div>
+  <div id="group2" class="parallax__group">
+    <div class="parallax__layer parallax__layer--base">
+      <div class="title">      			
+    	Then you've noticed that there are quite a few things to keep track of.</div>
+    </div>
+    <div class="parallax__layer parallax__layer--back">  
+      <div class="title">
+      </div>
+    </div>
+  </div>
+  <div id="group3" class="parallax__group">
+    <div class="parallax__layer parallax__layer--fore">
+      <div class="title">
+      	<p>Vaccination card</p>
+      	<p>Photos</p>
+      	<p>Insurance papers</p>
+     		<p>Vet apointments</p>
+      	<p>Ticks</p>
+      	<p>Fleas</p>
+      	<p>Friends</p>
+      	<p>Meet ups</p>
+      </div>	
+    </div>
+    <div class="parallax__layer parallax__layer--base">
+      <div class="title">
+      	<p>Passport</p>
+      	<p>Classes</p>
+      	<p>Competitions</p>
+      	<p>Baths</p>
+      	<p>Good walks</p>
+      	<p>Dog shows</p>
+      </div>
+    </div>
+  </div>
+  <div id="group4" class="parallax__group">
+    <div class="parallax__layer parallax__layer--base">
+      <div class="title">
+        So, What Do You Do?    
+      </div>
+    </div>
+    <div class="parallax__layer parallax__layer--back">
+      <div class="title">   
+      </div>
+    </div>
+    <div class="parallax__layer parallax__layer--deep">
+      <div class="title">
+      </div>
+    </div>
+  </div>
+  <div id="group5" class="parallax__group">
+    <div class="parallax__layer parallax__layer--fore">
+      <div class="title">
+      	<p class='dogpadMessage'>
+      		Start using Dogpad!
+      	</p>
+      	<p>
+      		<a href="/signup" class='btn btn-warning btn-lg btnTellMeMore'>Tell me more</a>
+      	</p>
+      </div>
+    </div>
+  </div>
+ </div>
+
+ <script type="text/javascript">
+	$('#noticeBoard').addClass('animated hinge');
+
+	$('#noticeBoard').one('webKitAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+		console.log('Animation end');
+		$('.parallax').fadeToggle(1000);
+		$('#noticeBoard').addClass('.minimize');
+	});
+ </script>
+</template>
