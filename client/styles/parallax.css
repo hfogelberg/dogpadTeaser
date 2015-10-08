@@ -100,22 +100,22 @@
   z-index: 5; /* slide over group 2 */
 }
 #group1 .parallax__layer--base {
-  background-image: url('IMG_0348.JPG');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  background-color: rgb(102,204,102);
+  background-color: #20D665;
+  background-image: url('dog.jpg');
 }
 
 #group2 {
   z-index: 3; /* slide under groups 1 and 3 */
 }
 #group2 .parallax__layer--back {
-  background-image: url('bird.jpg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
-  background-color: rgb(123,210,102);
+  background-color: #4BDE69;
+  background-image: url('leash.jpg');
 }
 
 #group3 {
@@ -123,10 +123,10 @@
 }
 #group3 .parallax__layer--base {
   background-color: rgb(153,216,101);
-  background-image: url('house.jpg');
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center bottom;
+  background-position: center center;
+  background-image: url('bone.jpg');
 }
 
 #group4 {
@@ -135,33 +135,24 @@
   /* slide under group 3 and 5 */
 }
 #group4 .parallax__layer--base {
-    /*background: rgb(184,223,101);*/
+  background-color: #ABE564;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  background-image: url('question.jpg');
 }
-
 
 
 #group5 {
-  z-index: 3; /* slide over group 4 and 6 */
-}
-#group5 .parallax__layer--base {
-  background-color: rgb(214,229,100);
-  background-color: rgb(254, 255, 153);
-  background-image: url('notepad.jpg');
+  /* slide over group 4 and 6 */
+  z-index: 3; 
+  background-color: #D0EA60;
   background-repeat: no-repeat;
-  background-size: 45%;
+  background-size: contain;
   background-position: center center;
+  background-image: url('notepad.jpg');
 }
 
-/*#group6 {
-  z-index: 2; /* slide under group 5 and 7 */
+#group5 .parallax__layer--base {
+  /*background-color: rgb(254, 255, 153);*/
 }
-#group6 .parallax__layer--back {
-  background: rgb(245,235,100);
-}
-
-#group7 {
-  z-index: 3; /* slide over group 7 */
-}
-#group7 .parallax__layer--base {
-  background: rgb(255,241,100);
-}*/
