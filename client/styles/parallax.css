@@ -122,7 +122,8 @@
   z-index: 4; /* slide over group 2 and 4 */
 }
 #group3 .parallax__layer--base {
-  background-color: rgb(153,216,101);
+  /*background-color: rgb(153,216,101);*/
+  background-color: rgb(131, 223, 94);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
