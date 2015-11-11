@@ -157,3 +157,12 @@
 #group5 .parallax__layer--base {
   /*background-color: rgb(254, 255, 153);*/
 }
+
+#group6 {
+  font-size: 100% !important;
+  z-index: 2; /* slide under group 5 and 7 */
+}
+#group6 .parallax__layer--back {
+  /*background: rgb(245,235,100);*/
+  background: #FEFF99;
+}

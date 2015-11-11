@@ -71,7 +71,10 @@ body {
 	margin: 0 auto;
 }
 
-article {
+.signupArticle {
+	font-size: 60%;
+	font-weight: normal;
+	font-style: normal;
 	padding-top: 10px;
 	padding-left: 40px;
 	padding-right: 40px;
@@ -79,16 +82,12 @@ article {
 	margin: 0 auto;
 }
 
-article p {
-	font-size: 130%;
-}
-
 h1.moreTitle {
 	text-align: center;
 	margin: 0 auto;
 	font-weight: bold;
 	margin-bottom: 30px;
-	font-size: 400%;
+	font-size: 300%;
 }
 
 .form {
@@ -108,3 +107,4 @@ h1.moreTitle {
 	padding: 20px;
 	text-align: center;;
 }
+
