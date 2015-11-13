@@ -21,3 +21,5 @@ twbs:bootstrap
 iron:router
 spiderable
 ejson
+tanis:bootstrap-social
+fortawesome:fontawesome

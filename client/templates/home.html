@@ -1,7 +1,7 @@
 <template name='home'>
 	<div class='boardContainer'>
     <div class='title'>
-      <h1>Log a Dog</h1>
+      <h1 class='hidden'>Log a Dog</h1>
     </div>
 		<img src='teaser.png' class='animated hinge img-responsive' id='noticeBoard' alt='dogpad-noticeboard'/>
 	</div>
@@ -87,6 +87,7 @@
 
  <script type="text/javascript">
 	$('#noticeBoard').addClass('animated hinge');
+  $('h1').removeClass('hidden');
 
 	$('#noticeBoard').one('webKitAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 		console.log('Animation end');

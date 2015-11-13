@@ -1,11 +1,8 @@
 body {
-/*	background: rgb(214,229,100);
-	background-color: rgb(214,229,100);*/
 	background: #FEFF99;
 }
 
 .container-fluid {
-  /*background: rgb(214,229,100);*/
   background: #FEFF99;
   margin: 0;
   padding: 0;
@@ -15,14 +12,12 @@ body {
 .boardContainer {
 	margin-left: 0 auto;
 	margin-right: 0 auto;
-	/*padding-top: 50px;*/
-	/*background: rgb(214, 229, 100);*/
 	background: #FEFF99;
 }
 
 #noticeBoard {
 	margin: 0 auto;
-	margin-top: -10px;
+	margin-top: 0;
   animation-delay: 0s;
 	animation-duration: 2s;
 	-ms-animation-delay: 3s;
@@ -57,6 +52,10 @@ body {
 }
 
 .dogpadMessage {
+	font-size: 250%;
+}
+
+.dogpadMessage h2 {
 	font-size: 300%;
 }
 
@@ -82,7 +81,7 @@ body {
 	margin: 0 auto;
 }
 
-h1.moreTitle {
+.moreTitle {
 	text-align: center;
 	margin: 0 auto;
 	font-weight: bold;
@@ -104,10 +103,37 @@ h1.moreTitle {
 }
 
 .thanksContent {
-	padding: 20px;
-	text-align: center;;
+	font-size: 140%;
+	font-weight: normal;
+	font-style: normal;
+	padding-top: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	width: 60%;
+	margin: 0 auto;
 }
+
 
 .hidden {
 	visibility: none;
+}
+
+.e-mail:before {
+    content: attr(data-website) "\0040" attr(data-user);
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+.btn-social  {
+	margin-top: 20px;
+	margin-left: 5px;
+	display: inline;
+	width: 20%;
+}
+
+.bye {
+	margin-top: 30px;
+	font-style: italic;
+	font-size: 120%;
+	font-weight: normal;
 }
