@@ -108,3 +108,6 @@ h1.moreTitle {
 	text-align: center;;
 }
 
+.hidden {
+	visibility: none;
+}

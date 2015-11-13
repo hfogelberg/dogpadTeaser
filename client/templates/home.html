@@ -1,5 +1,8 @@
 <template name='home'>
 	<div class='boardContainer'>
+    <div class='title'>
+      <h1>Log a Dog</h1>
+    </div>
 		<img src='teaser.png' class='animated hinge img-responsive' id='noticeBoard' alt='dogpad-noticeboard'/>
 	</div>
 
@@ -7,14 +10,14 @@
   <div id="group1" class="parallax__group">
     <div class="parallax__layer parallax__layer--base">
       <div class="title">
-        <p>So you have a dog or two.</p> 
+        <h2>So you have a dog or two?</h2> 
         <p>Or three or four?</p></div>
     </div>
   </div>
   <div id="group2" class="parallax__group">
     <div class="parallax__layer parallax__layer--base">
-      <div class="title">      			
-    	Then you've noticed that there are quite a few things to keep track of.</div>
+      <h2 class="title">      			
+    	Then you've noticed that there are quite a few things to keep track of.</h2>
     </div>
     <div class="parallax__layer parallax__layer--back">  
       <div class="title">
@@ -47,9 +50,9 @@
   </div>
   <div id="group4" class="parallax__group">
     <div class="parallax__layer parallax__layer--base">
-      <div class="title">
+      <h2 class="title">
         So, What Do You Do?    
-      </div>
+      </h2>
     </div>
     <div class="parallax__layer parallax__layer--back">
       <div class="title">   
@@ -66,7 +69,7 @@
       <div class="title">
       	<p class='dogpadMessage'>
       		Start using <br/>
-          <bold>Log a Dog!</bold>
+          <h2>Log a Dog!</h2>
       	</p>
       </div>
     </div>
@@ -88,7 +91,9 @@
 	$('#noticeBoard').one('webKitAnimationEnd MSAnimationEnd oanimationend animationend', function(){
 		console.log('Animation end');
 		$('.parallax').fadeToggle(1000);
+    $('h1').fadeToggle(2000);
 		$('#noticeBoard').addClass('.minimize');
+    $('h1').addClass('.minimize');
 	});
  </script>
 </template>

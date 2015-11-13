@@ -1,27 +1,40 @@
-<head>
-	<title>Log a Dog | Everything concerning your dog</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<meta name='description' content='Log a Dog! The web site you need to keep track of everything concerning you dog and your dog owning friends.'>
-	<meta name='keywords' content='dogs, dog insurances, dog food, ticks, veterinary, vaccinations, dog owner, find other dog owners, find other dogs, log a dog, dog facts, pet care, dog journal, whole dog journal'>
-	<meta name='author' content='Henrik Fogelberg'>
-	<meta name='robots' content='all'>
-	<link href='https://fonts.googleapis.com/css?family=Lato:400,100italic,700,900' rel='stylesheet' type='text/css'>
-</head>
-
 <template name='layout'>
-  <div class='container-fluid'>
-		{{> yield}}
-	</div>
+	<head>
+		<title>Log a Dog | Everything concerning your dog</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name='description' content='Log a Dog! The web site you need to keep track of everything concerning you dog and your dog owning friends.'>
+		<meta name='keywords' content='dogs, dog insurances, dog food, ticks, veterinary, vaccinations, dog owner, find other dog owners, find other dogs, log a dog, dog facts, pet care, dog journal, whole dog journal'>
+		<meta name='author' content='Henrik Fogelberg'>
+		<meta name='robots' content='all'>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,100italic,700,900' rel='stylesheet' type='text/css'>
+	</head>
 
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	<body>	
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	  ga('create', 'UA-69789215-1', 'auto');
-	  ga('send', 'pageview');
+		  ga('create', 'UA-69789215-1', 'auto');
+		  ga('send', 'pageview');
 
-	</script>
+		</script>
+
+		<!-- Google Tag Manager -->
+		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TNHTRV"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-TNHTRV');</script>
+		<!-- End Google Tag Manager -->
+
+	  <div class='container-fluid'>
+			{{> yield}}
+		</div>
+	</body>
 </template>
+
 
